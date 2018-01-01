@@ -29,9 +29,9 @@ public class PatientBean extends AbstUserBean{
 	public void setCongenitalDisease(String congenitalDisease) {
 		CongenitalDisease = congenitalDisease;
 	}
-	public PatientBean(String name, String tel, String location, Date birthDate, Date registeDate, String allergic,
-			String congenitalDisease) {
-		super(name, tel, location);
+	public PatientBean(String name, String tel, String location, int id, Date birthDate, Date registeDate,
+			String allergic, String congenitalDisease) {
+		super(name, tel, location, id);
 		BirthDate = birthDate;
 		RegisteDate = registeDate;
 		Allergic = allergic;
@@ -41,9 +41,10 @@ public class PatientBean extends AbstUserBean{
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public PatientBean(String name, String tel, String location) {
-		super(name, tel, location);
+	public PatientBean(String name, String tel, String location, int id) {
+		super(name, tel, location, id);
 		// TODO Auto-generated constructor stub
 	}
+	
 	
 }

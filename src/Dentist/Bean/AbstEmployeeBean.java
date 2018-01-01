@@ -15,19 +15,21 @@ public abstract class AbstEmployeeBean extends AbstUserBean{
 	public void setDivision(String division) {
 		Division = division;
 	}
-	public AbstEmployeeBean(String name, String tel, String location, int salary, String division) {
-		super(name, tel, location);
-		Salary = salary;
-		Division = division;
-	}
+	
 	public AbstEmployeeBean() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public AbstEmployeeBean(String name, String tel, String location) {
-		super(name, tel, location);
+	public AbstEmployeeBean(String name, String tel, String location, int id, int salary, String division) {
+		super(name, tel, location, id);
+		Salary = salary;
+		Division = division;
+	}
+	public AbstEmployeeBean(String name, String tel, String location, int id) {
+		super(name, tel, location, id);
 		// TODO Auto-generated constructor stub
 	}
+	
 	
 
 }
